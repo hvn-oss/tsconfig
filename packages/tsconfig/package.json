@@ -1,6 +1,6 @@
 {
   "name": "@hvn-oss/tsconfig",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Shared TypeScript configuration presets for HVN OSS projects.",
   "homepage": "https://github.com/hvn-oss/tsconfig#readme",
   "bugs": {
