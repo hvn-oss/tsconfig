@@ -4,8 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "ready": "vp check && vp run -r test && vp run -r build",
-    "dev": "vp run @hvn-oss/tsconfig#dev",
+    "check": "vp check",
+    "test": "vp run -r test",
+    "build": "vp run -r build",
+    "ready": "vp run check --fix && vp run test && vp run build",
+    "version": "vpx changeset version",
+    "release": "vp run build && vpx changeset publish",
+    "dev": "vp run docs#dev",
     "clean": "vp run -r clean && git clean -xdf node_modules dist .output",
     "prepare": "vp config"
   },
@@ -13,14 +18,8 @@
     "@changesets/cli": "catalog:",
     "vite-plus": "catalog:"
   },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.8.0",
-      "onFail": "download"
-    }
-  },
   "engines": {
     "node": ">=22.18.0"
-  }
+  },
+  "packageManager": "pnpm@11.8.0"
 }
