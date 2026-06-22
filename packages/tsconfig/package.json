@@ -1,0 +1,39 @@
+{
+  "name": "@hvn-oss/tsconfig",
+  "version": "0.0.0",
+  "description": "Shared TypeScript configuration presets for HVN OSS projects.",
+  "homepage": "https://github.com/hvn-oss/tsconfig#readme",
+  "bugs": {
+    "url": "https://github.com/hvn-oss/tsconfig/issues"
+  },
+  "license": "MIT",
+  "author": "Daniel Fakunle <danielofakunle@yahoo.com>",
+  "repository": {
+    "type": "git",
+    "url": "github:hvn-oss/tsconfig",
+    "directory": "packages/tsconfig"
+  },
+  "files": [
+    "*.json"
+  ],
+  "type": "module",
+  "exports": {
+    "./library": "./library.json",
+    "./library.json": "./library.json",
+    "./package.json": "./package.json",
+    "./react-library": "./react-library.json",
+    "./react-library.json": "./react-library.json",
+    "./vite": "./vite.json",
+    "./vite.json": "./vite.json",
+    "./vp-react-library": "./vp-react-library.json",
+    "./vp-react-library.json": "./vp-react-library.json",
+    "./vp-vite": "./vp-vite.json",
+    "./vp-vite.json": "./vp-vite.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "git clean -xdf node_modules dist .output"
+  }
+}
