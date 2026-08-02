@@ -8,13 +8,12 @@
     "test": "vp run -r test",
     "build": "vp run -r build",
     "ready": "vp run check --fix && vp run test && vp run build",
-    "version": "vpx changeset version",
-    "release": "vp run build && vpx changeset publish",
     "dev": "vp run docs#dev",
     "clean": "vp run -r clean && git clean -xdf node_modules dist .output",
     "prepare": "vp config"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "catalog:",
     "@changesets/cli": "catalog:",
     "vite-plus": "catalog:"
   },
