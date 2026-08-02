@@ -11,7 +11,8 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vitest: 4.1.9
   vite-plus: latest
-  "@changesets/cli": ^2.31.0
+  "@changesets/changelog-github": 1.0.0-next.8
+  "@changesets/cli": 3.0.0-next.10
 overrides:
   vite: "catalog:"
   vitest: "catalog:"
