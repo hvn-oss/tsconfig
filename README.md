@@ -4,7 +4,7 @@ Shared TypeScript configuration presets for HVN OSS projects.
 
 ## Packages
 
-- `@hvn-oss/tsconfig` - reusable `tsconfig.json` presets for libraries, Vite apps, Vite+ apps, and React libraries.
+- `@hvn-oss/tsconfig` - reusable `tsconfig.json` presets for Bun, Node.js, libraries, Vite apps, Vite+ apps, and React libraries.
 
 ## Usage
 
@@ -25,7 +25,9 @@ Extend one of the presets from your project `tsconfig.json`:
 
 Available presets:
 
+- `@hvn-oss/tsconfig/bun`
 - `@hvn-oss/tsconfig/library`
+- `@hvn-oss/tsconfig/node-library`
 - `@hvn-oss/tsconfig/react-library`
 - `@hvn-oss/tsconfig/vite`
 - `@hvn-oss/tsconfig/vp-react-library`
