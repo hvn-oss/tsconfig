@@ -1,0 +1,4 @@
+{
+  "extends": "@hvn-oss/tsconfig/bun",
+  "include": ["src"]
+}
